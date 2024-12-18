@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Mechanics Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fluid Mechanics Calculator</h1>
+
+        <!-- Input Section -->
+        <div class="input-section">
+            <label>h₁ (cm): <input type="number" id="h1"></label>
+            <label>h₂ (cm): <input type="number" id="h2"></label>
+            <label>Time (t in sec): <input type="number" id="time"></label>
+            <label>p₁ (cm): <input type="number" id="p1"></label>
+            <label>p₂ (cm): <input type="number" id="p2"></label>
+            <label>Length (L in cm): <input type="number" id="length"></label>
+            <label>Diameter (d in cm): <input type="number" id="diameter"></label>
+            <label>Kinematic Viscosity (v in cm²/s): <input type="number" id="viscosity"></label>
+            <button id="calculateBtn">Calculate</button>
+        </div>
+
+        <!-- Results -->
+        <div class="results">
+            <p id="dischargeResult"></p>
+            <p id="headLossResult"></p>
+            <p id="frictionFactorResult"></p>
+            <p id="reynoldsNumberResult"></p>
+        </div>
+
+        <!-- Chart Section -->
+        <canvas id="frictionChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
